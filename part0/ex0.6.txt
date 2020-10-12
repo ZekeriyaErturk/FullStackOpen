@@ -1,0 +1,13 @@
+note over browser:
+form filled and save clicked!
+end note
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+
+
+note over browser:
+browser starts executing js-code
+that updates server data 
+and rerenders notes to display
+end note
+
+browser->server: ({ content: "test", date: "2020-10-12"})
